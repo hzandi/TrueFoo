@@ -11,6 +11,7 @@
 
     <color name="truecaller_blue">#0b86fd</color>
     <color name="primary_background">#F4F7F9</color>
+    <color name="secondary_text">#888888</color>
 
 
 </resources>

@@ -2,4 +2,7 @@
     <string name="app_name">TrueFoo</string>
     <string name="fetch_blog_post">fetch blog post</string>
     <string name="try_again">Try Again</string>
+    <string name="tenth_char">Tenth Character</string>
+    <string name="every_tenth_char">Every Tenth Char</string>
+    <string name="word_counter">Word Counter</string>
 </resources>
