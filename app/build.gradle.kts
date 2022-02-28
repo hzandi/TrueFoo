@@ -15,6 +15,9 @@ android {
         versionCode = Versions.versionCode
         versionName = Versions.versionName
         testInstrumentationRunner = "com.truecaller.android.CustomTestRunner"
+
+        // vector drawable backward compatibility
+        vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         getByName("release") {
