@@ -71,12 +71,4 @@ object Dependencies {
         const val jsoup = "org.jsoup:jsoup:${Versions.jsoupVersion}"
     }
 
-    object ScrCast {
-        const val dexter = "com.karumi:dexter:6.2.2"
-        const val activity = "androidx.activity:activity-ktx:1.3.0-alpha08"
-        const val fragment = "androidx.fragment:fragment-ktx:1.4.0-alpha01"
-        const val localBroadcastManager =
-            "androidx.localbroadcastmanager:localbroadcastmanager:1.0.0"
-    }
-
 }
