@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TrueFoo</string>
+    <string name="fetch_blog_post">fetch blog post</string>
+    <string name="try_again">Try Again</string>
 </resources>

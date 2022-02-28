@@ -68,6 +68,7 @@ object Dependencies {
             "com.squareup.retrofit2:converter-scalars:${Versions.retrofitVersion}"
         const val okhttpLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:4.8.1"
         const val gson = "com.google.code.gson:gson:${Versions.gsonVersion}"
+        const val jsoup = "org.jsoup:jsoup:${Versions.jsoupVersion}"
     }
 
     object ScrCast {

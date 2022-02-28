@@ -1,6 +1,8 @@
 plugins {
     id("com.android.library")
     kotlin("android")
+    kotlin("kapt")
+    id("dagger.hilt.android.plugin")
     id("kotlin-parcelize")
 }
 
@@ -30,6 +32,10 @@ android {
     }
 }
 
+kapt {
+    correctErrorTypes = true
+}
+
 dependencies {
     implementation(Dependencies.Common.kotlinStdLib)
     implementation(Dependencies.Common.inject)
@@ -41,4 +47,33 @@ dependencies {
     implementation(Dependencies.Data.retrofitScalarsConverter)
     implementation(Dependencies.Data.okhttpLoggingInterceptor)
     implementation(Dependencies.Data.gson)
+    implementation(Dependencies.Data.jsoup)
+
+    // Test
+    testImplementation(Dependencies.CommonTest.junit)
+    testImplementation(Dependencies.CommonTest.truth)
+    testImplementation(Dependencies.CommonTest.testCore)
+    testImplementation(Dependencies.CommonTest.coreTesting)
+    testImplementation(Dependencies.CommonTest.mockito)
+    testImplementation(Dependencies.CommonTest.mockitoInline)
+    testImplementation(Dependencies.CommonTest.coroutinesTest)
+
+    // Espresso
+    androidTestImplementation(Dependencies.AppTest.espresso)
+    androidTestImplementation(Dependencies.AppTest.testRunner)
+    androidTestImplementation(Dependencies.AppTest.testRules)
+
+    debugImplementation(Dependencies.AppTest.fragmentTesting)
+
+    // Dagger Hilt
+    implementation(Dependencies.App.hilt)
+    kapt(Dependencies.App.hiltAndroidCompiler)
+
+    // Dagger Hilt ViewModel extension
+    implementation(Dependencies.App.hiltViewModel)
+    kapt(Dependencies.App.hiltCompiler)
+
+    // Dagger Hilt instrumentation tests
+    androidTestImplementation(Dependencies.AppTest.hiltAndroidTesting)
+    kaptAndroidTest(Dependencies.AppTest.hiltAndroidCompiler)
 }

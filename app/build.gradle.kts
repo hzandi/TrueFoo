@@ -79,6 +79,7 @@ dependencies {
     implementation(Dependencies.App.blurry)
     implementation(Dependencies.App.coil)
 
+    // Test
     testImplementation(Dependencies.CommonTest.junit)
     testImplementation(Dependencies.CommonTest.truth)
     testImplementation(Dependencies.CommonTest.testCore)
@@ -98,5 +99,5 @@ dependencies {
     androidTestImplementation(Dependencies.AppTest.hiltAndroidTesting)
     kaptAndroidTest(Dependencies.AppTest.hiltAndroidCompiler)
 
-//    implementation(project(":data"))
+    implementation(project(":data"))
 }
