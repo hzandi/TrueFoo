@@ -1,4 +1,4 @@
-package com.truecaller.di
+package com.truecaller.truefoo.di
 
 import com.truecaller.data.api.BlogWebservice
 import com.truecaller.data.api.WebserviceFactory

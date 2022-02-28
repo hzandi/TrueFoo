@@ -1,4 +1,4 @@
-package com.truecaller.di
+package com.truecaller.truefoo.di
 
 import android.content.Context
 import android.content.SharedPreferences
