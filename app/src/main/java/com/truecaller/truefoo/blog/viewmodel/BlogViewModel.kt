@@ -49,7 +49,7 @@ class BlogViewModel @Inject constructor(
                         )
                         blogModel.viewState = ViewState.success(it)
                     } ?: run {
-                        throw Exception("something went wrong!")
+                        throw Exception("Something went wrong")
                     }
                 }
                 blogModel.measuredTime = measuredTime
@@ -82,7 +82,7 @@ class BlogViewModel @Inject constructor(
                         )
                         blogModel.viewState = ViewState.success(it)
                     } ?: run {
-                        throw Exception("something went wrong!")
+                        throw Exception("Something went wrong")
                     }
                 }
                 blogModel.measuredTime = measuredTime
@@ -115,7 +115,7 @@ class BlogViewModel @Inject constructor(
                         )
                         blogModel.viewState = ViewState.success(it)
                     } ?: run {
-                        throw Exception("something went wrong!")
+                        throw Exception("Something went wrong")
                     }
                 }
                 blogModel.measuredTime = measuredTime

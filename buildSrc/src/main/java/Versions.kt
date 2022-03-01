@@ -8,7 +8,7 @@ object Versions {
     const val lifecycleVersion = "2.2.0-rc01"
     const val navigationVersion = "2.3.1"
     const val coroutinesVersion = "1.5.0-RC"
-    const val mockitoVersion = "2.28.2"
+    const val mockitoVersion = "4.3.1"
 
     const val compileSdkVersion = 29
     const val minSdkVersion = 23

@@ -48,7 +48,6 @@ class WebserviceFactory @Inject constructor(private val localStorage: LocalStora
                     okHttpBuilder.addInterceptor(it)
                 }
         }
-
         return okHttpBuilder.build()
 
     }
@@ -58,7 +57,6 @@ class WebserviceFactory @Inject constructor(private val localStorage: LocalStora
         override fun intercept(chain: Interceptor.Chain): Response {
 
             val original = chain.request()
-
             val request = original.newBuilder()
                 .header(
                     HEADER_NAME_AUTHORIZATION,
@@ -72,15 +70,8 @@ class WebserviceFactory @Inject constructor(private val localStorage: LocalStora
                 .build()
 
             return chain.proceed(request)
-
         }
 
-    }
-
-    private fun getGSONBuilder(): Gson {
-        return GsonBuilder()
-            .setLenient()
-            .create()
     }
 
 }

@@ -90,6 +90,7 @@ dependencies {
     testImplementation(Dependencies.CommonTest.mockito)
     testImplementation(Dependencies.CommonTest.mockitoInline)
     testImplementation(Dependencies.CommonTest.coroutinesTest)
+    testImplementation(Dependencies.CommonTest.mockitoKotlin)
 
     // Espresso
     androidTestImplementation(Dependencies.AppTest.espresso)
