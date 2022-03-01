@@ -2,7 +2,6 @@ package com.truecaller.data.repository.blog
 
 import com.truecaller.data.api.BlogWebservice
 import com.truecaller.data.entity.HtmlPageEntity
-import com.truecaller.data.entity.Response
 import javax.inject.Inject
 
 class BlogRepositoryImpl

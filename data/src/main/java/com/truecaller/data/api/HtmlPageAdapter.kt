@@ -4,9 +4,9 @@ import com.truecaller.data.entity.HtmlPageEntity
 import okhttp3.ResponseBody
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
+import org.jsoup.nodes.Element
 import retrofit2.Converter
 import retrofit2.Retrofit
-import org.jsoup.nodes.Element
 import java.lang.reflect.Type
 
 class HtmlPageAdapter : Converter<ResponseBody, HtmlPageEntity> {

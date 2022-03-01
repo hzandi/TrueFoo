@@ -9,12 +9,10 @@ import com.truecaller.truefoo.blog.viewmodel.BlogViewModel
 import com.truecaller.truefoo.common.*
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import org.junit.Assert
-import org.junit.Assert.assertThrows
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.mockito.Mockito
-import org.mockito.kotlin.verify
 
 @ExperimentalCoroutinesApi
 class BlogWordCounterTest {
